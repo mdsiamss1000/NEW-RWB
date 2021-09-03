@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Web Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="new.css" type="text/css" media="">
+    <style>
+        *{
+            scroll-behavior: smooth;
+        }
+        .image img{
+            width:180px;
+            height:180px;
+        }
+        .underline:hover{
+            text-decoration: underline;
+        }
+        .header-h1{
+            font-family: 'Roboto Mono', monospace;
+            user-select: none;
+        }
+        .card-hover{
+            transition:.3s;
+        }
+        .card-hover:hover{
+            box-shadow:7px 7px 20px black;
+            transform: scale(1.1);
+        }
+        #feedback{
+            background-color:#0d0442;
+            padding:7% 5%;
+        }
+        .hr-style{
+            border:5px dotted white;
+            border-bottom:none;
+            width:200px;
+        }
+        .carousel-item{
+            padding:5% 15%;
+            text-align: center;
+            font-style:italic;
+        }
+        .carousel-item img{
+            border-radius:50%;
+            width:190px;
+        }
+    </style>
+</head>
+<body>
+
+        <section class="container">
+            <header class="bg-primary">
+                <div class="row">
+                    <div class="col-lg-5 m-auto">
+                        <h1 class="py-2 text-white text-center mb-0 header-h1">M.D.SIAM</h1>
+                    </div>
+                    <div class="col-lg-7">
+                        <ul class="py-3 nav justify-content-center">
+                            <li class="nav-item"><a class="underline text-white nav-link" href="RWD.html">Home</a></li>
+                            <li class="nav-item"><a class="underline text-white nav-link" href="mailto:mdsiamss10@gmail.com">Email</a></li>
+                            <li class="nav-item"><a class="underline text-white nav-link" href="#feedback">Feedback</a></li>
+                            <li class="nav-item"><a class="underline text-white nav-link" href="#contacts">Contact Me</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            
+            <main>
+
+                <!-- service start -->
+
+                <div class="service-section bg-light pt-3">
+                    <div class="title text-center mb-3">
+                        <h3 class="font-weight-bolder">OUR SERVICES</h3>
+                    </div>
+                    <div class="row text-left text-md-center">
+                        <div class="col-lg-3 col-md-6">
+                            <i class="bg-primary p-2 fa-2x text-white rounded-circle mb-3 fas fa-hands-helping"></i>
+                            <h5 class="text-uppercase">Web Designing</h5>
+                            <p class="text-muted">Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development rather than software development.</p>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <i class="bg-primary p-2 fa-2x text-white rounded-circle mb-3 fas fa-hands-helping"></i>
+                            <h5 class="text-uppercase">Web Designing</h5>
+                            <p class="text-muted">Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development rather than software development.</p>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <i class="bg-primary p-2 fa-2x text-white rounded-circle mb-3 fas fa-hands-helping"></i>
+                            <h5 class="text-uppercase">Web Designing</h5>
+                            <p class="text-muted">Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development rather than software development.</p>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <i class="bg-primary p-2 fa-2x text-white rounded-circle mb-3 fas fa-hands-helping"></i>
+                            <h5 class="text-uppercase">Web Designing</h5>
+                            <p class="text-muted">Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development rather than software development.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- service end -->
+
+                <!-- about section start -->
+
+                <div class="about-section pt-4">
+                    <div class="jumbotron pt-4">
+                        <div class="title text-center mb-3">
+                            <h3 class="font-weight-bolder">About Me</h3>
+                        </div>
+                        <div class="row">
+                            <div class="image col-lg-4 text-center">
+                                <!-- <img class="mt-0 rounded-circle" src="siam.jpg" alt=""> -->
+                                <img  class="mt-0 rounded-circle" src="https://i.ibb.co/zbqn62K/siam.jpg" alt="siam" border="0">
+                            </div>
+                            <div class="col-lg-8 mt-3">
+                                <p class="text-muted text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure reprehenderit fugit pariatur iste magni tempore nostrum iusto quidem cupiditate suscipit dignissimos cum amet dolorem, dolorum error rerum veniam! Quod exercitationem voluptatum quos, deleniti, tempore omnis in laboriosam dignissimos, beatae repellendus id. Enim, quod iure possimus debitis numquam dolorum facere suscipit cumque, cum saepe tenetur autem earum repellendus cupiditate sit vitae culpa veritatis aut, nam itaque reiciendis provident repudiandae non!</p>
+
+
+                                    <a class=" mb-3 d-block" href="#more" data-toggle="collapse">Learn More</a>
+                                    <div id="more" class="collapse">
+                                        <p class="text-muted text-justify">Repellendus veritatis cupiditate ex temporibus, perspiciatis ducimus velit. Cum debitis eum quas fuga voluptatem laboriosam labore inventore esse repellendus, libero atque tenetur nemo iste perspiciatis exercitationem molestias consectetur dolorum ratione commodi quaerat asperiores, quo adipisci repellat ut! Dolores eius accusamus tempora in molestias, inventore voluptatibus iste, voluptas, tenetur suscipit perspiciatis cumque molestiae quas id eum accusantium harum asperiores praesentium recusandae officiis voluptatum illum? Expedita, delectus repellendus modi cupiditate consequatur reprehenderit perspiciatis harum laborum suscipit molestiae porro commodi fugiat? Harum tempora nesciunt nobis aut magni molestias quasi reiciendis corporis? Beatae eaque officia, a ea pariatur saepe voluptates cum. Facere alias minus consequatur?</p>
+                                    </div>
+
+                                    <button class="btn btn-outline-primary mb-3">CV Download</button>
+                            
+
+
+                                <div class="alert alert-success alert-dismissable">
+                                    <button class="close" data-dismiss="alert"><i class="far fa-times-circle"></i></button>
+                                    Have you visited my facebook? <a href="https://www.facebook.com/ohiduzzaman.siam.7" target="_blank">Click Here</a>
+                                </div>
+                                <div class="alert alert-warning alert-dismissable">
+                                    <button class="close" data-dismiss="alert"><i class="far fa-times-circle"></i></button>
+                                     Have you visited my instagram. <a href="https://www.instagram.com/ohiduzzamansiam/" target="_blank">Click here</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- about section end -->
+
+                <!-- table section strat -->
+
+                <div class="education-section my-5">
+                    <div class="title text-center mb-3">
+                        <h3 class="font-weight-bolder">Education</h3>
+                    </div>
+                    <table class="table table-bordered table-hover table-dark table-striped">
+                        <thead class="">
+                            <tr>
+                                <th>Qualification</th>
+                                <th>Institution</th>
+                                <th>Passing Year</th>
+                                <th>Grade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>SSC</td>
+                                <td>Pirojpur govt. high school</td>
+                                <td>2016</td>
+                                <td>4.78/5.00</td>
+                            </tr>
+                            <tr>
+                                <td>HSC</td>
+                                <td>Khulna govt. high school</td>
+                                <td>2006</td>
+                                <td>4.57/5.00</td>
+                            </tr>
+                            <tr>
+                                <td>JSC</td>
+                                <td>Barishal govt. high school</td>
+                                <td>2014</td>
+                                <td>4.84/5.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- table section end -->
+
+                <!-- card section start -->
+
+
+                <div class="my-card bg-light">
+                    <div class="title text-center mb-3">
+                        <h3 class="font-weight-bolder">MY CARD</h3>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card  card-hover mb-3">
+                                <img class="card-img-top" src="https://cdn.sharechat.com/a6bbc07_1616858924775_sc.jpeg" alt="sdifhsf">
+                                <div class="card-body">
+                                    <h4 class="card-title">HTML</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, fuga.</p>
+                                    <a class="card-link stretched-link" href="https://sharechat.com/tag/ezADb5/chatroom" target="_blank">Visit Here</a>
+                                </div>                                                            
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card  card-hover mb-3">
+                                <img class="card-img-top" src="https://images.hdqwalls.com/wallpapers/robot-scifi-4k-6x.jpg" alt="sdifhsf">
+                                <div class="card-body">
+                                    <h4 class="card-title">CSS</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, fuga.</p>
+                                    <a class="card-link stretched-link" href="https://images8.alphacoders.com/104/1047165.jpg" target="_blank">Visit Here</a>
+                                </div>                                                            
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card  card-hover mb-3">
+                                <img class="card-img-top" src="https://images8.alphacoders.com/104/1047165.jpg" alt="sdifhsf">
+                                <div class="card-body">
+                                    <h4 class="card-title">JAVASCRIPT</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, fuga.</p>
+                                    <a class="card-link stretched-link" href="https://sharechat.com/tag/ezADb5/chatroom" target="_blank">Visit Here</a>
+                                </div>                                                            
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card  card-hover mb-3">
+                                <img class="card-img-top" src="https://wallpaperaccess.com/full/2881276.jpg" alt="sdifhsf">
+                                <div class="card-body">
+                                    <h4 class="card-title">PYTHON</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, fuga.</p>
+                                    <a class="card-link stretched-link" href="https://sharechat.com/tag/ezADb5/chatroom" target="_blank">Visit Here</a>
+                                </div>                                                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card section end -->
+
+                <!-- coustomer review start -->
+
+                <div class="coustomer-review bg-light text-center mt-5">
+                    <div class="title text-center mb-3">
+                        <h3 class="font-weight-bolder">Coustomer Review</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <blockquote class="blockquote">
+                                <i class="fas fa-user-circle fa-3x"></i>
+                                <p class="text-justify">Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.In this website we will learn <abbr title="bootstrap 4">BS4</abbr>.</p>
+                                <footer class="blockquote-footer">
+                                    M.D. Siam in <cite>Youtube</cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <blockquote class="blockquote">
+                                <i class="fas fa-user-circle fa-3x"></i>
+                                <p class="text-justify">Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.In this website we will learn <abbr title="bootstrap 4">BS4</abbr>.</p>
+                                <footer class="blockquote-footer">
+                                    M.D. Siam in <cite>facebook</cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <blockquote class="blockquote">
+                                <i class="fas fa-user-circle fa-3x"></i>
+                                <p class="text-justify">Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.In this website we will learn <abbr title="bootstrap 4">BS4</abbr>.</p>
+                                <footer class="blockquote-footer">
+                                    M.D. Siam in <cite>Instagram</cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <blockquote class="blockquote">
+                                <i class="fas fa-user-circle fa-3x"></i>
+                                <p class="text-justify">Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.In this website we will learn <abbr title="bootstrap 4">BS4</abbr>.</p>
+                                <footer class="blockquote-footer">
+                                    M.D. Siam in <cite>Twitter</cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- coustomer review end -->
+
+                <!-- feedback section start -->
+            <div id="feedback" class="container text-white mt-3 bg-light">
+                <section id="feedback">
+                    <div class="section-title">
+                        <h3 class="text-center">Feedback</h3>
+                        <hr class="hr-style">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <p>1.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis soluta ipsam dolore, cupiditate sed hic?</p>
+                                    <img class="feedback-img" src="https://i.ibb.co/zbqn62K/siam.jpg" alt="">
+                                    <h6>M.D. SIAM</h6>
+                                </div>
+                                  <div class="carousel-item">
+                                    <p>2.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis soluta ipsam dolore, cupiditate sed hic?</p>
+                                    <img class="feedback-img" src="https://i.ibb.co/zbqn62K/siam.jpg" alt="">
+                                    <h6>M.D. SIAM</h6>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <p>3.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis soluta ipsam dolore, cupiditate sed hic?</p>
+                                    <img class="feedback-img" src="https://i.ibb.co/zbqn62K/siam.jpg" alt="">
+                                    <h6>M.D. SIAM</h6>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <p>4.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis soluta ipsam dolore, cupiditate sed hic?</p>
+                                    <img class="feedback-img" src="https://i.ibb.co/zbqn62K/siam.jpg" alt="">
+                                    <h6>M.D. SIAM</h6>
+                                  </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                              </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+                <!-- feedback section end -->
+
+                <!-- Toggleable dynamic tab start -->
+
+                    <div class="other-section mt-2">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item"><a data-toggle="tab" class="nav-link active" href="#education">Education</a></li>
+                            <li class="nav-item"><a data-toggle="tab" class="nav-link" href="#skills">Skills</a></li>
+                            <li class="nav-item"><a data-toggle="tab" class="nav-link" href="#hobby">Hobby</a></li>
+                        </ul>
+                        <div class="tab-content py-2">
+                            <div id="education" class="tab-pane active"><p class="text-muted"><span style="font-weight: bolder; font-size:20px;">1. Lorem ipsum</span> dolor sit amet consectetur adipisicing elit. Veniam quas a adipisci culpa tempora tempore ex magnam, aliquid aperiam dolor atque ut fugit saepe dolorum? Cumque, blanditiis quo esse doloribus nula at praesentium quisquam, nobis voluptatum provident odit, impedit necessitatibus san mango.</p></div>
+                            <div id="skills" class="tab-pane fade"><p class="text-muted"><span style="font-weight: bolder; font-size:20px;">2. Lorem ipsum</span> dolor sit amet consectetur adipisicing elit. Veniam quas a adipisci culpa tempora tempore ex magnam, aliquid aperiam dolor atque ut fugit saepe dolorum? Cumque, blanditiis quo esse doloribus nula at praesentium quisquam, nobis voluptatum provident odit, impedit necessitatibus san mango.</p></div>
+                            <div id="hobby" class="tab-pane fade"><p class="text-muted"><span style="font-weight: bolder; font-size:20px;">3. Lorem ipsum</span> dolor sit amet consectetur adipisicing elit. Veniam quas a adipisci culpa tempora tempore ex magnam, aliquid aperiam dolor atque ut fugit saepe dolorum? Cumque, blanditiis quo esse doloribus nula at praesentium quisquam, nobis voluptatum provident odit, impedit necessitatibus san mango.</p></div>
+                        </div>
+                    </div>
+
+                <!-- Toggleable dynamic tab end -->
+
+                    <!-- meadia object start -->
+
+                    <div class="media-section mb-3 bg-light">
+                        <div class="title text-center mb-3">
+                            <h3 class="font-weight-bolder">My Blogs</h3>
+                        </div>
+                        <div class="media p-3 border mt-3">
+                            <!-- <img style="width:80px;"  class="mt-0 rounded-circle mr-4" src="https://i.ibb.co/zbqn62K/siam.jpg" alt="siam" border="0"> -->
+                            <div class="media-body">
+                                <h5>I love programming and web designing.</h5>
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nemo saepe beatae qui, odit quam possimus tenetur quasi ut aliquid.</p>
+                            </div>
+                            <img style="width:80px;"  class="mt-0 rounded-circle mr-4" src="https://i.ibb.co/zbqn62K/siam.jpg" alt="siam" border="0">
+                        </div>
+
+                        <div class="media p-3 border mt-3 mb-3">
+                            <!-- <img style="width:80px; height:80px;"  class="mt-0 rounded-circle mr-4" src="https://media.istockphoto.com/videos/zoom-in-digital-eye-with-green-screen-video-id920038052?s=640x640" alt="siam" border="0"> -->
+                            <div class="media-body">
+                                <h5>I love hacking and cracking.</h5>
+                                <p class="text-muted text-bolder">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur nemo saepe beatae qui, odit quam possimus tenetur quasi ut aliquid.</p>
+                            </div>
+                            <img style="width:80px; height:80px;"  class="mt-0 rounded-circle mr-4" src="https://media.istockphoto.com/videos/zoom-in-digital-eye-with-green-screen-video-id920038052?s=640x640" alt="siam" border="0">
+                        </div>
+
+                    <!-- meadia object end -->
+
+               <!-- student list start -->
+
+                <div class="student-list bg-light">
+                    <ul class="list-group">
+                        <li class="list-group-item bg-primary text-white">MD SIAM</li>
+                        <li class="list-group-item bg-secondary text-white mt-1">MAHIA</li>
+                        <li class="list-group-item bg-success text-white mt-1">BAYZID</li>
+                    </ul>
+                </div>
+
+               <!-- student list end -->
+
+               <!-- form section start -->
+
+                <div id="contacts" style="background-color:#bdedff;" class="contacts-section p-3 my-5 text-dark">
+                    <div class="title text-center mb-3">
+                        <h3 class="font-weight-bolder">Contacts</h3>
+                    </div>  
+                    <form action="" class="was-validated">
+                        <div class="form-group">
+                            <lable for="fullname">Full name</lable>
+                            <input type="text" class="form-control" name="fullname" required>
+                            <div class="valid-feedback">Valid</div>
+                            <div class="invalid-feedback"><b>Please enter your Full name</b></div>
+                        </div>
+
+                        <div class="form-group">
+                            <lable for="email">Email</lable>
+                            <input type="text" class="form-control" name="email" required>
+                            <div class="valid-feedback">Valid</div>
+                            <div class="invalid-feedback"><b>Please enter your Email</b></div>
+                        </div>
+
+                        <div class="form-group">
+                            <lable for="password">Password</lable>
+                            <input type="password" class="form-control" name="password" required>
+                            <div class="valid-feedback">Valid</div>
+                            <div class="invalid-feedback"><b>Please enter your password</b></div>
+                        </div>
+
+                        <div class="form-group">
+                            <lable for="subject">Subject</lable>
+                            <input type="text" class="form-control" name="subject" required>
+                            <div class="valid-feedback">Valid</div>
+                            <div class="invalid-feedback"><b>Please enter your subject</b></div>
+                        </div>
+
+                        <div class="form-group">
+                            <lable for="message">Message</lable>
+                            <textarea style="resize:none;" type="text" class="form-control" cols="30" rows="10" name="message" required></textarea>
+                            <div class="valid-feedback">Valid</div>
+                            <div class="invalid-feedback"><b>Please enter your message</b></div>
+                        </div>
+
+                        <div class="form-group">
+                            <input class="btn btn-secondary" type="submit" value="Submit">
+                            <input class="btn btn-secondary" type="reset" value="Reset">
+                        </div>
+                    </form>
+                </div>
+
+               <!-- form section end -->
+
+            </main>
+   
+            <footer class="bg-dark mt-4">
+                <ul class="pagination py-3 justify-content-center">
+                    <li class="page-item"><a class="page-link" href="#" target="_blank">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#" target="_blank">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#" target="_blank">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#" target="_blank">4</a></li>
+                </ul>
+            </footer>
+        </div>
+    
+       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
+</html>
